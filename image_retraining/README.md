@@ -1,7 +1,9 @@
 Usage:
 
 IMAGE_SIZE=224
+
 ARCHITECTURE="mobilenet_1.0_${IMAGE_SIZE}"
+
 python -m image_retraining.retrain \
   --architecture="${ARCHITECTURE}" \
   --image_dir=tf_files/flower_photos \
